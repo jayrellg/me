@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
@@ -14,88 +19,133 @@
             padding: 20px;
             background-color: #3498db;
             color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        a {
+        header h1 {
+            margin: 0;
+        }
+
+        .profile-img {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img img {
+            width: 200px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .intro,
+        .course,
+        .hobby,
+        .fun-fact {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro h2,
+        .course h2,
+        .hobby h2,
+        .fun-fact h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #3498db;
+        }
+
+        .intro p,
+        .course ul,
+        .hobby ul,
+        .fun-fact p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .course ul,
+        .hobby ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .course ul li,
+        .hobby ul li {
+            margin-bottom: 8px;
+        }
+
+        .course ul li::before,
+        .hobby ul li::before {
+            content: "\2022";
+            color: #3498db;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .course ul a {
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
         }
 
-        .contact-info {
-            margin-top: 20px;
-        }
-
-
-        /* Center the image */
-        .profile-img {
-            text-align: center;
-        }
-
-        .profile-img img {
-            width: 150px; /* Adjust size as needed */
-        }
-
-        /* Style for square list icons */
-        ul {
-            list-style-type: square;
+        .fun-fact p {
+            font-style: italic;
         }
     </style>
 </head>
 <body>
 
-    <!-- Centered Header -->
     <header>
         <h1>Jayrell Garcia</h1>
     </header>
 
-    <!-- Centered Profile Image -->
     <div class="profile-img">
-        <a href="https://lewisflyers.com/sports/mens-soccer/roster/jayrell-garcia/11023">
-    <img src="https://images.sidearmdev.com/resize?url=https%3a%2f%2fdxbhsrqyrr690.cloudfront.net%2fsidearm.nextgen.sites%2flewisflyers.com%2fimages%2f2023%2f8%2f21%2f_SW59690.JPG&width=146&type=jpeg" alt="Jayrell Garcia">
-</a>
-
+        <img src="https://images.sidearmdev.com/resize?url=https%3a%2f%2fdxbhsrqyrr690.cloudfront.net%2fsidearm.nextgen.sites%2flewisflyers.com%2fimages%2f2023%2f8%2f21%2f_SW59690.JPG&width=146&type=jpeg" alt="Jayrell Garcia">
     </div>
 
-    <!-- Contact Information -->
     <div class="contact-info">
         <p>Email: <a href="mailto:jayrellgarcia@lewisu.edu">jayrellgarcia@lewisu.edu</a></p>
         <p>Discord: jayg09584</p>
     </div>
 
-
-    <!-- Introduction -->
     <div class="intro">
         <h2>Introduction</h2>
-        <p>I am Jayrell Garcia. I come from a close-knit Mexican family, and 
-        I am majoring in Computer Science at Lewis University with a concentration in Secure Programming. Some other notable infomration about my self is 
-        that I love soccer and I actually play for the universty team at Lewis. I enjoy to play video games and hangout with friends and family.</p>
+        <p>I am Jayrell Garcia. I come from a close-knit Mexican family, and I am majoring in Computer Science at Lewis University with a concentration in Secure Programming. Some other notable information about myself is that I love soccer and I actually play for the university team at Lewis. I enjoy playing video games and hanging out with friends and family.</p>
     </div>
 
-    <!-- What I Hope to Learn in this Course -->
     <div class="course">
         <h2>What I Hope to Learn in this Course</h2>
         <ul>
             <li>Advanced web development techniques</li>
             <li>Best practices in software engineering</li>
             <li>Explore emerging technologies</li>
-            <li>Expand my knowledge on software programming</li>
+            <li>Expand my knowledge of software programming</li>
         </ul>
     </div>
 
-    <!-- My Favorite Hobby / Activity -->
     <div class="hobby">
         <h2>My Favorite Hobby / Activity</h2>
         <ul>
             <li>Coding side projects</li>
             <li>Playing Pool</li>
-            <li>
-                <a href="https://www.bundesliga.com/en/faq/all-you-need-to-know-about-soccer">Playing Soccer</a>
-            </li>
+            <li><a href="https://www.bundesliga.com/en/faq/all-you-need-to-know-about-soccer">Playing Soccer</a></li>
         </ul>
     </div>
 
-    <!-- Fun Fact -->
     <div class="fun-fact">
         <h2>Fun Fact</h2>
         <p>My birthday falls under a U.S. Holiday</p>
